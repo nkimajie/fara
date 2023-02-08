@@ -1,3 +1,4 @@
+import 'package:fara/screens/navpages/music.dart';
 import 'package:flutter/material.dart';
 import 'package:fara/constant/colors.dart';
 
@@ -16,7 +17,7 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   List pages = [
     const HomeScreen(),
-    const Card(),
+    const Music(),
     const Community(),
     const Profile(),
   ];
@@ -54,7 +55,7 @@ class _MainPageState extends State<MainPage> {
             ),
           ),
           BottomNavigationBarItem(
-            label: "Resources",
+            label: "Music",
             icon: Icon(Icons.payment_rounded),
           ),
           BottomNavigationBarItem(
