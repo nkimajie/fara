@@ -71,39 +71,79 @@ class Music extends StatelessWidget {
             const Gap(38),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              child: Column(
                 children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      AppTextBold(
-                        text: "10 reasons",
-                        size: 16,
-                        weight: FontWeight.w700,
-                        color: AppColors.primaryText,
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          AppTextBold(
+                            text: "10 reasons",
+                            size: 16,
+                            weight: FontWeight.w700,
+                            color: AppColors.primaryText,
+                          ),
+                          const Gap(4),
+                          AppTextBold(
+                            text: "Stay Inspired- Episode 1",
+                            size: 14,
+                            weight: FontWeight.w400,
+                            color: const Color(0xff888D95),
+                          ),
+                        ],
                       ),
-                      const Gap(4),
-                      AppTextBold(
-                        text: "Stay Inspired- Episode 1",
-                        size: 14,
-                        weight: FontWeight.w400,
-                        color: const Color(0xff888D95),
+                      const SizedBox(
+                        width: 18,
+                        height: 16,
+                        child: Image(
+                          image: AssetImage('assets/speaker.png'),
+                        ),
                       ),
                     ],
                   ),
-                  const SizedBox(
-                    width: 18,
-                    height: 16,
-                    child: Image(
-                      image: AssetImage('assets/speaker.png'),
-                    ),
+                  const Gap(75),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      AppTextBold(
+                        text: "1x",
+                        size: 16,
+                        weight: FontWeight.w600,
+                        color: AppColors.primaryText,
+                      ),
+                      Row(
+                        children: const [
+                          Icon(
+                            Icons.skip_previous,
+                            size: 24,
+                            color: AppColors.primaryText,
+                          ),
+                          Gap(33),
+                          Icon(
+                            Icons.pause_circle,
+                            size: 64,
+                            color: AppColors.primaryText,
+                          ),
+                          Gap(33),
+                          Icon(
+                            Icons.skip_next,
+                            size: 24,
+                            color: AppColors.primaryText,
+                          ),
+                        ],
+                      ),
+                      const Icon(
+                        Icons.shuffle,
+                        size: 24,
+                        color: AppColors.primaryText,
+                      ),
+                    ],
                   ),
                 ],
               ),
             ),
-            const Gap(75),
-            Row(),
           ],
         ),
       ),

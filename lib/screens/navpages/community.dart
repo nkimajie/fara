@@ -62,12 +62,21 @@ class Community extends StatelessWidget {
                   child: Column(
                     children: const [
                       Gap(20),
-                      communityWidget(),
-                      communityWidget(),
-                      communityWidget(),
-                      communityWidget(),
-                      communityWidget(),
-                      communityWidget(),
+                      CommunityWidget(
+                        image1: 'assets/frame.png',
+                      ),
+                      CommunityWidget(
+                        image1: 'assets/frame1.png',
+                      ),
+                      CommunityWidget(
+                        image1: 'assets/frame2.png',
+                      ),
+                      CommunityWidget(
+                        image1: 'assets/frame3.png',
+                      ),
+                      CommunityWidget(
+                        image1: 'assets/frame4.png',
+                      ),
                     ],
                   ),
                 ),
@@ -80,10 +89,13 @@ class Community extends StatelessWidget {
   }
 }
 
-class communityWidget extends StatelessWidget {
-  const communityWidget({
+class CommunityWidget extends StatelessWidget {
+  const CommunityWidget({
     Key? key,
+    required this.image1,
   }) : super(key: key);
+
+  final String image1;
 
   @override
   Widget build(BuildContext context) {
@@ -92,10 +104,10 @@ class communityWidget extends StatelessWidget {
       children: [
         Row(
           children: [
-            const SizedBox(
+            SizedBox(
               width: 101,
               child: Image(
-                image: AssetImage('assets/frame.png'),
+                image: AssetImage(image1),
               ),
             ),
             const Gap(20),
