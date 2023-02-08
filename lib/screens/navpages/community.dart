@@ -64,18 +64,23 @@ class Community extends StatelessWidget {
                       Gap(20),
                       CommunityWidget(
                         image1: 'assets/frame.png',
+                        text: 'Talks about treatment, Pathways',
                       ),
                       CommunityWidget(
                         image1: 'assets/frame1.png',
+                        text: 'How was your first session experiencee?',
                       ),
                       CommunityWidget(
                         image1: 'assets/frame2.png',
+                        text: 'How to live with cancer and be mentally stable.',
                       ),
                       CommunityWidget(
                         image1: 'assets/frame3.png',
+                        text: 'Is reliance on drugs a good thing?',
                       ),
                       CommunityWidget(
                         image1: 'assets/frame4.png',
+                        text: 'Talks about treatment, Pathways',
                       ),
                     ],
                   ),
@@ -93,9 +98,11 @@ class CommunityWidget extends StatelessWidget {
   const CommunityWidget({
     Key? key,
     required this.image1,
+    required this.text,
   }) : super(key: key);
 
   final String image1;
+  final String text;
 
   @override
   Widget build(BuildContext context) {
@@ -118,7 +125,7 @@ class CommunityWidget extends StatelessWidget {
                   SizedBox(
                     width: 152,
                     child: AppTextBold(
-                      text: 'Talks about treatment, Pathways',
+                      text: text,
                       color: AppColors.primaryText,
                       size: 14,
                       weight: FontWeight.w600,
@@ -172,23 +179,31 @@ class CommunityWidget extends StatelessWidget {
                             width: 120,
                             child: Stack(
                               children: const [
-                                circularImage(),
+                                circularImage(
+                                  image1: 'assets/image1.png',
+                                ),
                                 Positioned(
                                   left: 20,
                                   child: Center(
-                                    child: circularImage(),
+                                    child: circularImage(
+                                      image1: 'assets/image2.png',
+                                    ),
                                   ),
                                 ),
                                 Positioned(
                                   left: 42,
                                   child: Center(
-                                    child: circularImage(),
+                                    child: circularImage(
+                                      image1: 'assets/image3.png',
+                                    ),
                                   ),
                                 ),
                                 Positioned(
                                   left: 62,
                                   child: Center(
-                                    child: circularImage(),
+                                    child: circularImage(
+                                      image1: 'assets/image4.png',
+                                    ),
                                   ),
                                 ),
                               ],
@@ -223,16 +238,19 @@ class CommunityWidget extends StatelessWidget {
 class circularImage extends StatelessWidget {
   const circularImage({
     Key? key,
+    required this.image1,
   }) : super(key: key);
+
+  final String image1;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 30.0,
       width: 30.0,
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/image1.png'),
+          image: AssetImage(image1),
           fit: BoxFit.fill,
         ),
         shape: BoxShape.circle,
