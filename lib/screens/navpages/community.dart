@@ -60,8 +60,8 @@ class Community extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Column(
-                    children: [
-                      const Gap(20),
+                    children: const [
+                      Gap(20),
                       communityWidget(),
                       communityWidget(),
                       communityWidget(),
