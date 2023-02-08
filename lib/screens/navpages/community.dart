@@ -62,495 +62,12 @@ class Community extends StatelessWidget {
                   child: Column(
                     children: [
                       const Gap(20),
-                      Row(
-                        children: [
-                          const SizedBox(
-                            width: 101,
-                            child: Image(
-                              image: AssetImage('assets/frame.png'),
-                            ),
-                          ),
-                          const Gap(20),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              SizedBox(
-                                width: 152,
-                                child: AppTextBold(
-                                  text: 'Talks about treatment, Pathways',
-                                  color: AppColors.primaryText,
-                                  size: 14,
-                                  weight: FontWeight.w600,
-                                ),
-                              ),
-                              const Gap(7),
-                              Row(
-                                children: [
-                                  Row(
-                                    children: [
-                                      const Icon(
-                                        Icons.person,
-                                        size: 15,
-                                        color: AppColors.secondaryText,
-                                      ),
-                                      const Gap(8),
-                                      AppTextBold(
-                                        text: '200+',
-                                        color: AppColors.primaryText,
-                                        size: 14,
-                                        weight: FontWeight.w500,
-                                      ),
-                                    ],
-                                  ),
-                                  const Gap(14),
-                                  Row(
-                                    children: [
-                                      const Icon(
-                                        Icons.markunread_mailbox_outlined,
-                                        size: 15,
-                                        color: AppColors.secondaryText,
-                                      ),
-                                      const Gap(8),
-                                      AppTextBold(
-                                        text: '200+',
-                                        color: AppColors.primaryText,
-                                        size: 14,
-                                        weight: FontWeight.w500,
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                              const Gap(10),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Container(
-                                    child: Stack(
-                                      children: [
-                                        Row(
-                                          children: [
-                                            circularImage(),
-                                            circularImage(),
-                                            circularImage(),
-                                            circularImage(),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  const Gap(20),
-                                  AppButtons(
-                                    text: "Join",
-                                    size: 78,
-                                    color: Colors.white,
-                                    backgroundColor: AppColors.primaryIcon,
-                                    borderColor: AppColors.primaryIcon,
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      const Gap(10),
-                      const Divider(
-                        color: AppColors.secondaryText,
-                        thickness: 0.2,
-                      ),
-                      const Gap(20),
-                      Row(
-                        children: [
-                          const SizedBox(
-                            width: 101,
-                            child: Image(
-                              image: AssetImage('assets/frame.png'),
-                            ),
-                          ),
-                          const Gap(20),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              SizedBox(
-                                width: 152,
-                                child: AppTextBold(
-                                  text: 'Talks about treatment, Pathways',
-                                  color: AppColors.primaryText,
-                                  size: 14,
-                                  weight: FontWeight.w600,
-                                ),
-                              ),
-                              const Gap(7),
-                              Row(
-                                children: [
-                                  Row(
-                                    children: [
-                                      const Icon(
-                                        Icons.person,
-                                        size: 15,
-                                        color: AppColors.secondaryText,
-                                      ),
-                                      const Gap(8),
-                                      AppTextBold(
-                                        text: '200+',
-                                        color: AppColors.primaryText,
-                                        size: 14,
-                                        weight: FontWeight.w500,
-                                      ),
-                                    ],
-                                  ),
-                                  const Gap(14),
-                                  Row(
-                                    children: [
-                                      const Icon(
-                                        Icons.markunread_mailbox_outlined,
-                                        size: 15,
-                                        color: AppColors.secondaryText,
-                                      ),
-                                      const Gap(8),
-                                      AppTextBold(
-                                        text: '200+',
-                                        color: AppColors.primaryText,
-                                        size: 14,
-                                        weight: FontWeight.w500,
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                              const Gap(10),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Container(
-                                    child: Stack(
-                                      children: [
-                                        Row(
-                                          children: [
-                                            circularImage(),
-                                            circularImage(),
-                                            circularImage(),
-                                            circularImage(),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  const Gap(20),
-                                  AppButtons(
-                                    text: "Join",
-                                    size: 78,
-                                    color: Colors.white,
-                                    backgroundColor: AppColors.primaryIcon,
-                                    borderColor: AppColors.primaryIcon,
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      const Gap(10),
-                      const Divider(
-                        color: AppColors.secondaryText,
-                        thickness: 0.2,
-                      ),
-                      const Gap(20),
-                      Row(
-                        children: [
-                          const SizedBox(
-                            width: 101,
-                            child: Image(
-                              image: AssetImage('assets/frame.png'),
-                            ),
-                          ),
-                          const Gap(20),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              SizedBox(
-                                width: 152,
-                                child: AppTextBold(
-                                  text: 'Talks about treatment, Pathways',
-                                  color: AppColors.primaryText,
-                                  size: 14,
-                                  weight: FontWeight.w600,
-                                ),
-                              ),
-                              const Gap(7),
-                              Row(
-                                children: [
-                                  Row(
-                                    children: [
-                                      const Icon(
-                                        Icons.person,
-                                        size: 15,
-                                        color: AppColors.secondaryText,
-                                      ),
-                                      const Gap(8),
-                                      AppTextBold(
-                                        text: '200+',
-                                        color: AppColors.primaryText,
-                                        size: 14,
-                                        weight: FontWeight.w500,
-                                      ),
-                                    ],
-                                  ),
-                                  const Gap(14),
-                                  Row(
-                                    children: [
-                                      const Icon(
-                                        Icons.markunread_mailbox_outlined,
-                                        size: 15,
-                                        color: AppColors.secondaryText,
-                                      ),
-                                      const Gap(8),
-                                      AppTextBold(
-                                        text: '200+',
-                                        color: AppColors.primaryText,
-                                        size: 14,
-                                        weight: FontWeight.w500,
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                              const Gap(10),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Container(
-                                    child: Stack(
-                                      children: [
-                                        Row(
-                                          children: [
-                                            circularImage(),
-                                            circularImage(),
-                                            circularImage(),
-                                            circularImage(),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  const Gap(20),
-                                  AppButtons(
-                                    text: "Join",
-                                    size: 78,
-                                    color: Colors.white,
-                                    backgroundColor: AppColors.primaryIcon,
-                                    borderColor: AppColors.primaryIcon,
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      const Gap(10),
-                      const Divider(
-                        color: AppColors.secondaryText,
-                        thickness: 0.2,
-                      ),
-                      const Gap(20),
-                      Row(
-                        children: [
-                          const SizedBox(
-                            width: 101,
-                            child: Image(
-                              image: AssetImage('assets/frame.png'),
-                            ),
-                          ),
-                          const Gap(20),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              SizedBox(
-                                width: 152,
-                                child: AppTextBold(
-                                  text: 'Talks about treatment, Pathways',
-                                  color: AppColors.primaryText,
-                                  size: 14,
-                                  weight: FontWeight.w600,
-                                ),
-                              ),
-                              const Gap(7),
-                              Row(
-                                children: [
-                                  Row(
-                                    children: [
-                                      const Icon(
-                                        Icons.person,
-                                        size: 15,
-                                        color: AppColors.secondaryText,
-                                      ),
-                                      const Gap(8),
-                                      AppTextBold(
-                                        text: '200+',
-                                        color: AppColors.primaryText,
-                                        size: 14,
-                                        weight: FontWeight.w500,
-                                      ),
-                                    ],
-                                  ),
-                                  const Gap(14),
-                                  Row(
-                                    children: [
-                                      const Icon(
-                                        Icons.markunread_mailbox_outlined,
-                                        size: 15,
-                                        color: AppColors.secondaryText,
-                                      ),
-                                      const Gap(8),
-                                      AppTextBold(
-                                        text: '200+',
-                                        color: AppColors.primaryText,
-                                        size: 14,
-                                        weight: FontWeight.w500,
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                              const Gap(10),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Container(
-                                    child: Stack(
-                                      children: [
-                                        Row(
-                                          children: [
-                                            circularImage(),
-                                            circularImage(),
-                                            circularImage(),
-                                            circularImage(),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  const Gap(20),
-                                  AppButtons(
-                                    text: "Join",
-                                    size: 78,
-                                    color: Colors.white,
-                                    backgroundColor: AppColors.primaryIcon,
-                                    borderColor: AppColors.primaryIcon,
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      const Gap(10),
-                      const Divider(
-                        color: AppColors.secondaryText,
-                        thickness: 0.2,
-                      ),
-                      const Gap(20),
-                      Row(
-                        children: [
-                          const SizedBox(
-                            width: 101,
-                            child: Image(
-                              image: AssetImage('assets/frame.png'),
-                            ),
-                          ),
-                          const Gap(20),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              SizedBox(
-                                width: 152,
-                                child: AppTextBold(
-                                  text: 'Talks about treatment, Pathways',
-                                  color: AppColors.primaryText,
-                                  size: 14,
-                                  weight: FontWeight.w600,
-                                ),
-                              ),
-                              const Gap(7),
-                              Row(
-                                children: [
-                                  Row(
-                                    children: [
-                                      const Icon(
-                                        Icons.person,
-                                        size: 15,
-                                        color: AppColors.secondaryText,
-                                      ),
-                                      const Gap(8),
-                                      AppTextBold(
-                                        text: '200+',
-                                        color: AppColors.primaryText,
-                                        size: 14,
-                                        weight: FontWeight.w500,
-                                      ),
-                                    ],
-                                  ),
-                                  const Gap(14),
-                                  Row(
-                                    children: [
-                                      const Icon(
-                                        Icons.markunread_mailbox_outlined,
-                                        size: 15,
-                                        color: AppColors.secondaryText,
-                                      ),
-                                      const Gap(8),
-                                      AppTextBold(
-                                        text: '200+',
-                                        color: AppColors.primaryText,
-                                        size: 14,
-                                        weight: FontWeight.w500,
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                              const Gap(10),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Container(
-                                    child: Stack(
-                                      children: [
-                                        Row(
-                                          children: const [
-                                            circularImage(),
-                                            circularImage(),
-                                            circularImage(),
-                                            circularImage(),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  const Gap(20),
-                                  AppButtons(
-                                    text: "Join",
-                                    size: 78,
-                                    color: Colors.white,
-                                    backgroundColor: AppColors.primaryIcon,
-                                    borderColor: AppColors.primaryIcon,
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      const Gap(10),
-                      const Divider(
-                        color: AppColors.secondaryText,
-                        thickness: 0.2,
-                      ),
+                      communityWidget(),
+                      communityWidget(),
+                      communityWidget(),
+                      communityWidget(),
+                      communityWidget(),
+                      communityWidget(),
                     ],
                   ),
                 ),
@@ -559,6 +76,134 @@ class Community extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class communityWidget extends StatelessWidget {
+  const communityWidget({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Row(
+          children: [
+            const SizedBox(
+              width: 101,
+              child: Image(
+                image: AssetImage('assets/frame.png'),
+              ),
+            ),
+            const Gap(20),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(
+                    width: 152,
+                    child: AppTextBold(
+                      text: 'Talks about treatment, Pathways',
+                      color: AppColors.primaryText,
+                      size: 14,
+                      weight: FontWeight.w600,
+                    ),
+                  ),
+                  const Gap(7),
+                  Row(
+                    children: [
+                      Row(
+                        children: [
+                          const Icon(
+                            Icons.person,
+                            size: 15,
+                            color: AppColors.secondaryText,
+                          ),
+                          const Gap(8),
+                          AppTextBold(
+                            text: '200+',
+                            color: AppColors.primaryText,
+                            size: 14,
+                            weight: FontWeight.w500,
+                          ),
+                        ],
+                      ),
+                      const Gap(14),
+                      Row(
+                        children: [
+                          const Icon(
+                            Icons.markunread_mailbox_outlined,
+                            size: 15,
+                            color: AppColors.secondaryText,
+                          ),
+                          const Gap(8),
+                          AppTextBold(
+                            text: '50+',
+                            color: AppColors.primaryText,
+                            size: 14,
+                            weight: FontWeight.w500,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  const Gap(10),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          SizedBox(
+                            width: 120,
+                            child: Stack(
+                              children: const [
+                                circularImage(),
+                                Positioned(
+                                  left: 20,
+                                  child: Center(
+                                    child: circularImage(),
+                                  ),
+                                ),
+                                Positioned(
+                                  left: 42,
+                                  child: Center(
+                                    child: circularImage(),
+                                  ),
+                                ),
+                                Positioned(
+                                  left: 62,
+                                  child: Center(
+                                    child: circularImage(),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      AppButtons(
+                        text: "Join",
+                        size: 78,
+                        color: Colors.white,
+                        backgroundColor: AppColors.primaryIcon,
+                        borderColor: AppColors.primaryIcon,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+        const Gap(10),
+        const Divider(
+          color: AppColors.secondaryText,
+          thickness: 0.2,
+        ),
+      ],
     );
   }
 }
